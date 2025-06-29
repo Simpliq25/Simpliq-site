@@ -39,6 +39,12 @@
       font-size: 0.8rem;
       opacity: 0.6;
     }
+    .logo-icon {
+      transition: box-shadow 0.3s ease;
+    }
+    .logo-icon:hover {
+      box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+    }
     @keyframes fadeIn {
       to {
         opacity: 0.9;
@@ -49,7 +55,8 @@
 <body>
   <div style="display: flex; align-items: center;">
   <img src="favicon-32x32.png" alt="Simpliq icon"
-       style="width: 42px; height: 42px; margin-right: 6px;" />
+  class="logo-icon"     
+      style="width: 42px; height: 42px; margin-right: 6px;" />
   <h1 style="margin: 0;">Simpliq</h1>
   </div>
   <p>A simple portfolio that inspires investing confidence.<br />Stay tuned for your opportunity.</p>
