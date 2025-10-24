@@ -1,152 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Simpliq</title>
-  <link rel="icon" href="favicon.ico" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
   <style>
-    :root{
-      --bg:#0e0e0e;
-      --fg:#f5f5f5;
-      --muted:rgba(245,245,245,0.75);
-      --max-width:900px;
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0e0e0e;
+      color: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      text-align: center;
     }
-
-    html,body{height:100%;margin:0;}
-    body{
-      font-family:'Segoe UI',sans-serif;
-      background:var(--bg);
-      color:var(--fg);
-      display:flex;
-      flex-direction:column;
-      min-height:100vh;
-      align-items:center;
-      text-align:center;
-      box-sizing:border-box;
-      padding:2.25rem 1rem;
-      justify-content:flex-start; /* ensures content starts at top and spacing is preserved */
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
     }
-
-    main{
-      flex:1 0 auto;
-      width:100%;
-      max-width:var(--max-width);
-      display:flex;
-      flex-direction:column;
-      align-items:center;
-      gap:1.25rem;               /* increased vertical spacing between blocks */
-      padding:0 0.75rem;
-      box-sizing:border-box;
+    p {
+      font-size: 1.2rem;
+      max-width: 480px;
+      opacity: 0;
+      animation: fadeIn 2s ease-in forwards;
+      animation-delay: 0.5s;
     }
-
-    .header{
-      width:100%;
-      display:flex;
-      align-items:center;
-      justify-content:center;    /* header centered again */
-      gap:12px;
-      margin-bottom:0.25rem;
+    footer {
+      /* removed absolute positioning so footer is in document flow */
+      font-size: 0.8rem;
+      opacity: 0.6;
+      margin-top: 1.25rem;
     }
-
-    .logo-icon{ width:42px; height:42px; transition:box-shadow .3s ease; }
-    .logo-icon:hover{ box-shadow:0 0 8px rgba(0,123,255,0.6); }
-
-    h1{ font-size:3rem; margin:0; line-height:1; text-align:center; }
-
-    /* Fade-in utility: apply to each element you want animated */
-    .fade {
-      opacity:0;
-      transform: translateY(6px);
-      animation: fadeUp 900ms cubic-bezier(.2,.9,.2,1) forwards;
+    .logo-icon {
+      transition: box-shadow 0.3s ease;
     }
-    .fade.delay-1{ animation-delay: 200ms; }
-    .fade.delay-2{ animation-delay: 450ms; }
-    .fade.delay-3{ animation-delay: 700ms; }
-    .fade.delay-4{ animation-delay: 900ms; }
-    .fade.delay-5{ animation-delay: 1100ms; }
-
-    @keyframes fadeUp{
-      to { opacity: 0.95; transform: translateY(0); }
+    .logo-icon:hover {
+      box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
     }
-
-    .hero-sub{ font-size:1.2rem; max-width:720px; margin:0; }
-    .content p{ margin:0; font-size:1.05rem; max-width:720px; line-height:1.5; }
-    .tagline{ margin:0.25rem 0 0.5rem 0; font-size:1rem; line-height:1.35; }
-    .stats p{ margin:0.15rem 0; }
-
-    a.email-link{ color:var(--fg); text-decoration:none; border-bottom:1px dashed rgba(245,245,245,0.06); }
-
-    footer{
-      flex-shrink:0;
-      width:100%;
-      max-width:var(--max-width);
-      box-sizing:border-box;
-      text-align:left;
-      font-size:0.85rem;
-      color:var(--muted);
-      padding:1rem 0.5rem 0;
-      margin-top:1.75rem;      /* extra spacing before footer */
-      border-top:1px solid rgba(255,255,255,0.03);
-    }
-
-    .disclaimer{ margin-top:0.5rem; font-size:0.78rem; line-height:1.45; color:rgba(245,245,245,0.75); }
-
-    @media (max-width:600px){
-      h1{ font-size:2.25rem; }
-      .hero-sub{ font-size:1rem; }
-      main{ gap:1rem; padding:0 0.5rem; }
-      footer{ padding:0.75rem 0.25rem 0; margin-top:1.25rem; }
+    @keyframes fadeIn {
+      to {
+        opacity: 0.9;
+      }
     }
   </style>
 </head>
 <body>
-  <main>
-    <header class="header" role="banner" aria-label="Site header">
-      <img src="favicon-32x32.png" alt="Simpliq icon" class="logo-icon fade delay-1" />
-      <h1 class="fade delay-1">Simpliq</h1>
-    </header>
+  <div style="display: flex; align-items: center;">
+  <img src="favicon-32x32.png" alt="Simpliq icon"
+  class="logo-icon"     
+      style="width: 42px; height: 42px; margin-right: 10px;" />
+  <h1 style="margin: 0;">Simpliq</h1>
+  </div>
+  <p>A simple portfolio that inspires investing confidence.</p>
+  <p>Weekly stock picks, including stop‑loss recommendations, delivered by email. No spam. No ads. Cancel anytime.</p>
+  
+  <p>📈 2024 Portfolio Performance: +340.79%</p>
+  <p>📈 2025 Year‑to‑Date: +483.56% (as of 10/13/25)</p>
 
-    <p class="hero-sub fade delay-2">A simple portfolio that inspires investing confidence.</p>
+  <p>
+  You deserve <strong>clarity</strong>.  
+  You deserve <strong>affordable results</strong>.  
+  You deserve <strong>Simpliq</strong>.
+  </p>
 
-    <div class="content" aria-live="polite">
-      <p class="fade delay-3">Weekly stock picks, including stop‑loss recommendations, delivered by email. No spam. No ads. Cancel anytime.</p>
-
-      <div class="stats fade delay-4" aria-hidden="false">
-        <p>📈 2024 Portfolio Performance: +340.79%</p>
-        <p>📈 2025 Year‑to‑Date: +483.56% (as of 10/13/25)</p>
-      </div>
-
-      <p class="tagline fade delay-5">
-        You deserve <strong>clarity</strong>.<br>
-        You deserve <strong>affordable results</strong>.<br>
-        You deserve <strong>Simpliq</strong>.
-      </p>
-
-      <p class="fade delay-5">Stay tuned for your opportunity.</p>
-
-      <p class="fade delay-5">📧 <a class="email-link" href="mailto:invest@simpliq.us.com">invest@simpliq.us.com</a></p>
-    </div>
-  </main>
-
-  <footer role="contentinfo" aria-label="Footer">
-    &copy; 2025 Simpliq
-
-    <div class="disclaimer">
-      Investing always involves some degree of risk, including the possibility of losing the money you put in. Returns are not guaranteed, may fluctuate over time, and can be negative. Even strategies designed to balance risk and reward may, at times, lead to lower or unexpected results.
-    </div>
-
-    <div class="disclaimer" style="margin-top:.5rem;">
-      Reported results reflect a model portfolio and may not mirror actual trading activity. They do not factor in transaction costs, slippage, or taxes. There is no guarantee that any investor will experience the same gains or losses, and past performance is not indicative of future results.
-    </div>
-
-    <div class="disclaimer" style="margin-top:.5rem;">
-      This material is provided for informational purposes only and should not be considered legal, tax, securities, or investment advice. It does not express an opinion on the suitability of any investment and should not be viewed as a solicitation. For guidance tailored to your situation, please consult qualified legal, tax, or financial professionals.
-    </div>
-
-    <div style="margin-top:.75rem;">
-      <a class="email-link" href="mailto:invest@simpliq.us.com">📧 invest@simpliq.us.com</a>
-    </div>
+  <p>Stay tuned for your opportunity.
+  <br><br>
+  <footer>&copy; 2025 Simpliq
+  <span style="font-size: 0.75rem; line-height: 1.4; display: block; opacity: 0.7; max-width: 800px; margin: 0 auto;">
+      Investing always involves some degree of risk, including the possibility of losing the money you put in. 
+      Returns are not guaranteed, may fluctuate over time, and can be negative. Even strategies designed to balance 
+      risk and reward may, at times, lead to lower or unexpected results.
+      Reported results reflect a model portfolio and may not mirror actual trading activity. They do not factor in 
+      transaction costs, slippage, or taxes. There is no guarantee that any investor will experience the same gains 
+      or losses, and past performance is not indicative of future results.
+      This material is provided for informational purposes only and should not be considered legal, tax, securities, 
+      or investment advice. It does not express an opinion on the suitability of any investment and should not be 
+      viewed as a solicitation. For guidance tailored to your situation, please consult qualified legal, tax, or 
+      financial professionals.
+  </span>
+    <br><br>
+    <a href="mailto:invest@simpliq.us.com" style="color: #f5f5f5; text-decoration: none;">
+    📧 invest@simpliq.us.com
+  </a>
   </footer>
 </body>
 </html>
