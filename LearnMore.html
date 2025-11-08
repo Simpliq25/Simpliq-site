@@ -3,22 +3,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Learn More — Simpliq</title>
-  <link rel="icon" href="favicon.ico" />
+  <title>Simpliq</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
       background: #0e0e0e;
       color: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
       text-align: center;
-      padding: 2rem;
     }
-    h1 { font-size: 2.5rem; margin-bottom: 1rem; }
-    p { font-size: 1.2rem; max-width: 600px; margin: 0 auto; line-height: 1.5; }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: 1.2rem;
+      max-width: 480px;
+      opacity: 0;
+      animation: fadeIn 2s ease-in forwards;
+      animation-delay: 0.5s;
+    }
+    footer {
+      /* removed absolute positioning so footer is in document flow */
+      font-size: 0.8rem;
+      opacity: 0.6;
+      margin-top: 1.25rem;
+    }
+    .logo-icon {
+      transition: box-shadow 0.3s ease;
+    }
+    .logo-icon:hover {
+      box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 0.9;
+      }
+    }
   </style>
 </head>
 <body>
-  <h1>Learn More</h1>
-  <p>Simpliq is built for clarity, confidence, and results. This page will soon explain how it works.</p>
-</body>
-</html>
+  <div style="display: flex; align-items: center;">
+  <img src="favicon-32x32.png" alt="Simpliq icon"
+  class="logo-icon"     
+      style="width: 42px; height: 42px; margin-right: 10px;" />
+  <h1 style="margin: 0;">Simpliq</h1>
+  </div>
+  <p>A simple portfolio that inspires investing confidence.</p>
