@@ -3,60 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Simpliq</title>
+  <title>Learn More – Simpliq</title>
+
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #0e0e0e;
-      color: #f5f5f5;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      margin: 0;
-      text-align: center;
-    }
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-    }
-    p {
-      font-size: 1.2rem;
-      max-width: 480px;
-      opacity: 0;
-      animation: fadeIn 2s ease-in forwards;
-      animation-delay: 0.5s;
-    }
-    footer {
-      font-size: 0.8rem;
-      opacity: 0.6;
-      margin-top: 1.25rem;
-    }
-    .logo-icon {
-      transition: box-shadow 0.3s ease;
-    }
-    .logo-icon:hover {
-      box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
-    }
-    @keyframes fadeIn {
-      to {
-        opacity: 0.9;
-      }
-    }
-  </style>
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div style="display: flex; align-items: center;">
-    <img src="favicon-32x32.png" alt="Simpliq icon"
-      class="logo-icon"
-      style="width: 42px; height: 42px; margin-right: 10px;" />
-    <h1 style="margin: 0;">Simpliq</h1>
+
+  <div class="logo-container">
+    <img src="favicon-32x32.png" alt="Simpliq icon" class="logo-icon" />
+    <h1>Simpliq</h1>
   </div>
 
   <p>A simple portfolio that inspires investing confidence.</p>
@@ -78,9 +40,11 @@
   <p><strong>5. Performance Transparency</strong><br>
   We publish model portfolio performance weekly, including gains, losses, and stop-loss outcomes. No cherry-picking.</p>
 
+  <p><a href="/" class="link-light">Return to homepage</a></p>
 
-  <footer>&copy; 2025 Simpliq
-    <span style="font-size: 0.75rem; line-height: 1.4; display: block; opacity: 0.7; max-width: 800px; margin: 0 auto;">
+  <footer>
+    &copy; 2026 Simpliq
+    <span style="font-size: 0.75rem; line-height: 1.4; display: block; opacity: 0.7; max-width: 800px; margin: 20px auto 0 auto;">
       Investing involves risk, including the potential loss of principal. Returns are not guaranteed, may fluctuate, and can be negative. 
       Modelled or reported results do not reflect actual trading and do not account for transaction costs, slippage, or taxes; 
       no investor is guaranteed to achieve the same gains or losses, and past performance is not indicative of future results. 
@@ -90,10 +54,11 @@
       investment adviser, or a representative with any securities regulatory authority or organization. All statements are based on information that is generally available to the public, 
       believed to be reliable, but not guaranteed to be accurate or complete.
     </span>
-    <br><br>
-    <a href="mailto:support@simpliq.us.com" style="color: #f5f5f5; text-decoration: none;">
+    <br>
+    <a href="mailto:support@simpliq.us.com" class="footer-email">
       📧 support@simpliq.us.com
     </a>
   </footer>
+
 </body>
 </html>
