@@ -1,62 +1,91 @@
+/* style.css */
+
+/* Global Layout */
 body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #0e0e0e;
-      color: #f5f5f5;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      margin: 0;
-      text-align: center;
-    }
+  font-family: 'Segoe UI', sans-serif;
+  background: #0e0e0e;
+  color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  text-align: center;
+}
 
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-    }
+/* Fix for the Logo Alignment */
+.logo-container {
+  display: flex;
+  flex-direction: row; /* Forces icon and text to stay in a line */
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
 
-    /* Faster fade-in */
-    p, #subscribe-btn {
-      font-size: 1.2rem;
-      max-width: 480px;
-      opacity: 0;
-      animation: fadeIn 1s ease-in forwards;
-      animation-delay: 0.2s;
-    }
+.logo-icon {
+  width: 42px; 
+  height: 42px; 
+  margin-right: 15px; /* Adds space between diamond and text */
+  transition: box-shadow 0.3s ease;
+}
 
-    .logo-icon {
-      transition: box-shadow 0.3s ease;
-    }
+.logo-icon:hover {
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+}
 
-    .logo-icon:hover {
-      box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
-    }
+h1 {
+  font-size: 3rem;
+  margin: 0; 
+}
 
-    @keyframes fadeIn {
-      to { opacity: 0.9; }
-    }
+/* Content Text & Animations */
+p, .btn {
+  font-size: 1.2rem;
+  max-width: 480px;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+  animation-delay: 0.2s;
+}
 
-    /* Subscribe button styling */
-    #subscribe-btn {
-      margin-top: 20px;
-      padding: 12px 24px;
-      font-size: 1.1rem;
-      background: #007bff;
-      border: none;
-      border-radius: 6px;
-      color: white;
-      cursor: pointer;
-      display: inline-block;
-      text-decoration: none;
-    }
+@keyframes fadeIn {
+  to { opacity: 0.9; }
+}
 
-    #subscribe-btn:hover {
-      background: #0a84ff;
-    }
+/* Button Styling */
+.btn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  background: #007bff;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+}
 
-    footer {
-      font-size: 0.8rem;
-      opacity: 0.6;
-      margin-top: 40px;
-    }
+.btn:hover {
+  background: #0a84ff;
+}
+
+/* Links */
+.link-light {
+  color: #f5f5f5; 
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  font-size: 0.8rem;
+  opacity: 0.6;
+  margin-top: 40px;
+}
+
+.footer-email {
+  color: #f5f5f5; 
+  text-decoration: none; 
+  display: inline-block; 
+  margin-top: 8px;
+}
