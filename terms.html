@@ -54,13 +54,20 @@
       box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
     }
 
-    /* Full-width header that matches homepage centering */
-    .logo-header {
-      width: 100%;
+    /* Full viewport-width header to match homepage centering */
+    .logo-viewport {
+      width: 100vw;
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+
       display: flex;
       align-items: center;
       justify-content: center;
-      min-height: 120px; /* visually matches homepage spacing */
+
+      min-height: 160px; /* visually matches homepage vertical centering */
       margin-bottom: 20px;
     }
 
@@ -102,8 +109,8 @@
 
 <body>
 
-  <!-- Simpliq Logo (now matches homepage pixel-perfectly) -->
-  <div class="logo-header">
+  <!-- Simpliq Logo (pixel-perfect match to homepage) -->
+  <div class="logo-viewport">
     <div class="logo-inner">
       <img src="favicon-32x32.png" alt="Simpliq icon" class="logo-icon" />
       <h1 class="logo-title">Simpliq</h1>
