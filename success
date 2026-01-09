@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html>
+  <body style="font-family: sans-serif; text-align: center; padding: 40px;">
+    <h1>Thank you for subscribing!</h1>
+    <p>Your weekly Simpliq picks will arrive by email.</p>
+    <a href="/">Return to homepage</a>
+  </body>
+</html>
