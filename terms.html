@@ -42,6 +42,15 @@
       text-decoration: underline;
     }
 
+    /* Logo hover effect */
+    .logo-icon {
+      transition: box-shadow 0.3s ease;
+    }
+
+    .logo-icon:hover {
+      box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+    }
+
     /* Subscribe button styling */
     #subscribe-btn {
       margin-top: 30px;
@@ -69,6 +78,14 @@
 </head>
 
 <body>
+
+  <!-- Simpliq Logo -->
+  <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+    <img src="favicon-32x32.png" alt="Simpliq icon"
+      class="logo-icon"
+      style="width: 42px; height: 42px; margin-right: 10px;" />
+    <h1 style="margin: 0;">Simpliq</h1>
+  </div>
 
   <h1>Terms & Conditions</h1>
 
@@ -104,12 +121,12 @@
   </p>
 
   <footer>
-  &copy; 2026 Simpliq
-  <br>
-  <a href="mailto:support@simpliq.us.com" 
-     style="color: #f5f5f5; text-decoration: none; display: inline-block; margin-top: 8px;">
-    📧 support@simpliq.us.com
-  </a>
+    &copy; 2026 Simpliq
+    <br>
+    <a href="mailto:support@simpliq.us.com" 
+       style="color: #f5f5f5; text-decoration: none; display: inline-block; margin-top: 8px;">
+      📧 support@simpliq.us.com
+    </a>
   </footer>
 
   <script>
