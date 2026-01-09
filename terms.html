@@ -22,7 +22,7 @@
       text-align: center;
     }
 
-    p, #subscribe-btn {
+    p, #subscribe-btn, footer {
       opacity: 0;
       animation: fadeIn 1s ease-in forwards;
       animation-delay: 0.2s;
@@ -58,6 +58,12 @@
 
     #subscribe-btn:hover {
       background: #0a84ff;
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 0.85rem;
+      opacity: 0.7;
     }
   </style>
 </head>
@@ -96,6 +102,10 @@
   <p style="margin-top: 40px;">
     <a href="/">Return to homepage</a>
   </p>
+
+  <footer>
+    © 2026 Simpliq — support@simpliq.us.com
+  </footer>
 
   <script>
     async function subscribe() {
