@@ -8,22 +8,20 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* Changed to flex-start to keep logo height consistent across all pages */
   justify-content: flex-start; 
   min-height: 100vh;
   margin: 0;
   text-align: center;
-  /* Adds responsive breathing room at the top */
   padding-top: 8vh; 
 }
 
-/* 2. Logo Header (Side-by-Side Fix) */
+/* 2. Logo Header */
 .logo-container {
   display: flex !important;
   flex-direction: row !important; 
   align-items: center !important;
   justify-content: center !important;
-  gap: 12px; /* Space between the blue diamond and text */
+  gap: 12px;
   margin-bottom: 30px;
 }
 
@@ -44,7 +42,7 @@ h1 {
   line-height: 1;
 }
 
-/* 3. Text Content & Animations */
+/* 3. Text & Content Alignment */
 p, .btn {
   font-size: 1.2rem;
   max-width: 480px;
@@ -53,11 +51,19 @@ p, .btn {
   animation-delay: 0.2s;
 }
 
-/* Used for long legal text on Terms page to prevent it being too narrow */
-.wide-text {
+/* THE FIX: Wrapper for left-justified long text */
+.content-wrapper {
   max-width: 800px;
+  width: 90%;
   text-align: left;
-  opacity: 1; /* Usually better for legal text to be instantly visible */
+  margin: 20px auto;
+}
+
+.content-wrapper p {
+  max-width: 100%;
+  opacity: 1; /* Instant visibility for legal text */
+  margin-bottom: 1.5rem;
+  animation: none; /* Disables fade-in for better readability on long pages */
 }
 
 @keyframes fadeIn {
@@ -92,7 +98,7 @@ p, .btn {
 footer {
   font-size: 0.8rem;
   opacity: 0.6;
-  margin-top: auto; /* Pushes footer to bottom if page content is short */
+  margin-top: auto;
   padding: 40px 0;
 }
 
