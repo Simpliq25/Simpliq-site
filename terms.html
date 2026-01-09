@@ -44,6 +44,9 @@
 
     /* Logo hover effect */
     .logo-icon {
+      width: 42px;
+      height: 42px;
+      margin-right: 10px;
       transition: box-shadow 0.3s ease;
     }
 
@@ -51,12 +54,22 @@
       box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
     }
 
-    /* Full-width logo wrapper to match homepage centering */
+    /* Full-width wrapper to match homepage centering */
     .header-logo {
       width: 100%;
       display: flex;
       justify-content: center;
       margin-bottom: 20px;
+    }
+
+    .logo-inner {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-title {
+      margin: 0;
+      font-size: 3rem; /* matches homepage */
     }
 
     /* Subscribe button styling */
@@ -87,13 +100,11 @@
 
 <body>
 
-  <!-- Simpliq Logo (now perfectly centered like homepage) -->
+  <!-- Simpliq Logo (perfectly centered like homepage) -->
   <div class="header-logo">
-    <div style="display: flex; align-items: center;">
-      <img src="favicon-32x32.png" alt="Simpliq icon"
-        class="logo-icon"
-        style="width: 42px; height: 42px; margin-right: 10px;" />
-      <h1 style="margin: 0; font-size: 3rem;">Simpliq</h1>
+    <div class="logo-inner">
+      <img src="favicon-32x32.png" alt="Simpliq icon" class="logo-icon" />
+      <h1 class="logo-title">Simpliq</h1>
     </div>
   </div>
 
