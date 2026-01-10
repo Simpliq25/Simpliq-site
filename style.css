@@ -57,7 +57,27 @@ h1 {
   margin: 0;
 }
 
-/* 4. Learn More List Styles (Fixes the "Screwed Up" Look) */
+/* 4. RESTORED: Performance Cards (Fixes Homepage) */
+.performance-card {
+  background: #161616;
+  border: 1px solid #2a2a2a;
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 650px;
+  width: 100%;
+  margin: 15px auto; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.performance-value {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+/* 5. Learn More List Styles */
 .steps-container {
   display: flex;
   flex-direction: column;
@@ -76,7 +96,7 @@ h1 {
 }
 
 .step-icon {
-  width: 32px !important; /* Forces icons to stay small */
+  width: 32px !important; 
   height: 32px !important;
   flex-shrink: 0;
   margin-top: 5px;
@@ -99,17 +119,22 @@ h1 {
   opacity: 0.85;
 }
 
-/* 5. Buttons and Links */
+/* 6. Buttons and Links */
 .btn {
   padding: 16px 40px;
   font-size: 1.25rem;
-  background: #007bff;
+  background: #333; /* Dark grey for secondary button */
   border-radius: 10px;
   color: white !important;
   text-decoration: none;
   font-weight: bold;
   display: inline-block;
-  margin: 20px 0;
+  margin: 5px 0;
+}
+
+/* Blue styling for the primary "Enough talk" button */
+.btn-primary {
+  background: #007bff;
 }
 
 .link-light {
@@ -118,7 +143,7 @@ h1 {
   opacity: 0.7;
 }
 
-/* 6. Footer */
+/* 7. Footer */
 footer {
   margin-top: auto;
   padding: 80px 0 40px;
