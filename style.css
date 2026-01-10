@@ -1,47 +1,78 @@
-/* Update to Section 1: Hero Text */
-.hero-text {
-  font-size: 1.5rem !important; /* Larger for impact */
-  font-weight: 600;
-  line-height: 1.4;
-  color: #ffffff;
-  margin-bottom: 40px !important;
+/* 1. Global Layout Fixes */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0e0e0e;
+  color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers everything globally */
+  justify-content: flex-start; 
+  min-height: 100vh;
+  margin: 0;
+  text-align: center;
+  padding: 8vh 20px; 
 }
 
-/* New Section: Performance Cards */
+/* 2. Hero and Standard Text */
+.hero-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  max-width: 800px;
+  line-height: 1.4;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  line-height: 1.6;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+/* 3. Performance Cards */
 .performance-card {
-  background: #1a1a1a; /* Subtle dark grey box */
+  background: #1a1a1a;
   border: 1px solid #333;
   border-radius: 12px;
   padding: 24px;
   max-width: 600px;
-  width: 90%;
-  margin: 15px auto;
+  width: 100%;
+  margin: 10px auto; /* Centers the card itself */
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: transform 0.3s ease;
-}
-
-.performance-card:hover {
-  transform: translateY(-5px); /* Gentle lift on hover */
-  border-color: #2ecc71;
-}
-
-.card-icon {
-  filter: drop-shadow(0 0 8px rgba(46, 204, 113, 0.4)); /* Green glow */
-  margin-bottom: 12px;
+  gap: 10px;
 }
 
 .performance-value {
-  font-size: 2.2rem;
-  display: block;
-  margin-top: 10px;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
-/* Subtle Divider */
-.section-divider {
-  width: 60px;
-  height: 2px;
-  background: #333;
-  margin: 50px auto;
+/* 4. Buttons and Links */
+.btn {
+  margin-top: 30px;
+  padding: 14px 32px;
+  font-size: 1.2rem;
+  background: #007bff;
+  border-radius: 8px;
+  color: white !important;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link-light {
+  color: #f5f5f5;
+  text-decoration: underline;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+/* 5. Footer */
+footer {
+  margin-top: auto;
+  padding: 40px 0;
+  opacity: 0.6;
+  font-size: 0.9rem;
 }
