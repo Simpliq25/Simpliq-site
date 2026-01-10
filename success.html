@@ -4,47 +4,38 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Subscription Successful – Simpliq</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #0e0e0e;
-      color: #f5f5f5;
-      margin: 0;
-      padding: 40px 20px;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      line-height: 1.6;
-    }
 
-    a {
-      color: #f5f5f5;
-      text-decoration: underline;
-    }
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 
-    footer {
-      margin-top: 40px;
-      font-size: 0.85rem;
-      opacity: 0.8;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <h1>Thank You for Subscribing!</h1>
-  <p>Your weekly Simpliq picks will arrive by email.</p>
-  <p><a href="/">Return to homepage</a></p>
+
+  <div class="logo-container">
+    <img src="favicon-32x32.png" alt="Simpliq icon" class="logo-icon" />
+    <h1>Simpliq</h1>
+  </div>
+
+  <div class="content-wrapper" style="text-align: center;">
+    <h2 style="color: #2ecc71;">Thank You for Subscribing!</h2>
+    <p>You’re all set. Your weekly Simpliq picks will arrive by email starting this Tuesday.</p>
+    <p>Please check your inbox (and spam folder) for a welcome confirmation.</p>
+  </div>
+
+  <a href="/" class="btn" style="background: #007bff; color: #ffffff !important; font-weight: bold; margin-bottom: 20px;">Return to Homepage</a>
 
   <footer>
     &copy; 2026 Simpliq
     <br>
-    <a href="mailto:support@simpliq.us.com" 
-       style="color: #f5f5f5; text-decoration: none; display: inline-block; margin-top: 8px;">
+    <a href="mailto:support@simpliq.us.com" class="footer-email">
       📧 support@simpliq.us.com
     </a>
   </footer>
+
 </body>
 </html>
