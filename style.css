@@ -13,45 +13,48 @@ body {
   padding: 8vh 20px; 
 }
 
-/* 2. Logo Header - RESTORED */
+/* 2. Logo Header */
 .logo-container {
   display: flex !important;
   flex-direction: row !important; 
   align-items: center !important;
   justify-content: center !important;
-  gap: 15px; /* Space between icon and text */
-  margin-bottom: 40px;
+  gap: 15px;
+  margin-bottom: 50px; /* Increased space after logo */
 }
 
 .logo-icon {
-  width: 50px; /* Restored to original prominent size */
+  width: 50px; 
   height: 50px;
-  display: block;
 }
 
 h1 {
-  font-size: 3.5rem; /* Larger, cleaner heading */
+  font-size: 3.5rem;
   margin: 0;
   line-height: 1;
   font-weight: 700;
 }
 
-/* 3. Hero and Content Text */
-.hero-text {
-  font-size: 1.5rem;
-  font-weight: 600;
+/* 3. Hero Pitch Grouping (Options 2 & 3) */
+.hero-group {
+  margin-bottom: 60px; /* Large 'Breath' before cards start */
   max-width: 850px;
-  line-height: 1.5;
-  margin-bottom: 30px;
-  color: #ffffff;
 }
 
-p {
-  font-size: 1.15rem;
-  max-width: 750px;
+.hero-lead {
+  font-size: 1.6rem; /* Option 2: Larger font for hook */
+  font-weight: 700; /* Option 2: Heavier weight */
+  line-height: 1.4;
+  color: #ffffff;
+  margin-bottom: 12px; /* Option 3: Tight spacing to next para */
+}
+
+.hero-sub {
+  font-size: 1.15rem; /* Option 2: Smaller for details */
+  font-weight: 400; /* Option 2: Lighter weight for contrast */
+  opacity: 0.8;
   line-height: 1.6;
-  opacity: 0.85;
-  margin: 0 auto 25px auto;
+  margin: 0;
 }
 
 /* 4. Performance Cards */
@@ -67,20 +70,15 @@ p {
   flex-direction: column;
   align-items: center;
   gap: 12px;
-  transition: border-color 0.3s ease;
-}
-
-.performance-card:hover {
-  border-color: #2ecc71;
 }
 
 .performance-value {
   font-size: 3rem;
   font-weight: 800;
-  letter-spacing: -1px;
+  color: #2ecc71;
 }
 
-/* 5. Buttons and Links */
+/* 5. Buttons and Footer */
 .btn {
   margin-top: 30px;
   padding: 16px 40px;
@@ -91,28 +89,3 @@ p {
   text-decoration: none;
   font-weight: bold;
   display: inline-block;
-  transition: transform 0.2s ease;
-}
-
-.btn:hover {
-  transform: scale(1.05);
-}
-
-.link-light {
-  color: #f5f5f5;
-  text-decoration: underline;
-  opacity: 0.7;
-  transition: opacity 0.2s;
-}
-
-.link-light:hover {
-  opacity: 1;
-}
-
-/* 6. Footer */
-footer {
-  margin-top: 60px;
-  padding-bottom: 40px;
-  opacity: 0.5;
-  font-size: 0.95rem;
-}
