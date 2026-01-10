@@ -20,7 +20,7 @@ body {
   align-items: center !important;
   justify-content: center !important;
   gap: 15px;
-  margin-bottom: 50px; /* Increased space after logo */
+  margin-bottom: 50px;
 }
 
 .logo-icon {
@@ -35,52 +35,72 @@ h1 {
   font-weight: 700;
 }
 
-/* 3. Hero Pitch Grouping (Options 2 & 3) */
+/* 3. Hero Pitch Grouping */
 .hero-group {
-  margin-bottom: 60px; /* Large 'Breath' before cards start */
+  margin-bottom: 50px;
   max-width: 850px;
 }
 
-.hero-lead {
-  font-size: 1.6rem; /* Option 2: Larger font for hook */
-  font-weight: 700; /* Option 2: Heavier weight */
+.hero-text {
+  font-size: 1.6rem;
+  font-weight: 700;
   line-height: 1.4;
   color: #ffffff;
-  margin-bottom: 12px; /* Option 3: Tight spacing to next para */
+  margin-bottom: 12px;
 }
 
 .hero-sub {
-  font-size: 1.15rem; /* Option 2: Smaller for details */
-  font-weight: 400; /* Option 2: Lighter weight for contrast */
+  font-size: 1.15rem;
+  font-weight: 400;
   opacity: 0.8;
   line-height: 1.6;
   margin: 0;
 }
 
-/* 4. Performance Cards */
-.performance-card {
-  background: #161616;
-  border: 1px solid #2a2a2a;
-  border-radius: 16px;
-  padding: 30px;
-  max-width: 650px;
-  width: 100%;
-  margin: 15px auto; 
+/* 4. Learn More List Styles (Fixes the "Screwed Up" Look) */
+.steps-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 12px;
+  gap: 30px;
+  max-width: 750px;
+  width: 100%;
+  margin: 40px auto;
+  text-align: left;
 }
 
-.performance-value {
-  font-size: 3rem;
-  font-weight: 800;
-  color: #2ecc71;
+.step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 10px;
 }
 
-/* 5. Buttons and Footer */
+.step-icon {
+  width: 32px !important; /* Forces icons to stay small */
+  height: 32px !important;
+  flex-shrink: 0;
+  margin-top: 5px;
+}
+
+.step-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.step-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.step-description {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  opacity: 0.85;
+}
+
+/* 5. Buttons and Links */
 .btn {
-  margin-top: 30px;
   padding: 16px 40px;
   font-size: 1.25rem;
   background: #007bff;
@@ -89,3 +109,19 @@ h1 {
   text-decoration: none;
   font-weight: bold;
   display: inline-block;
+  margin: 20px 0;
+}
+
+.link-light {
+  color: #f5f5f5;
+  text-decoration: underline;
+  opacity: 0.7;
+}
+
+/* 6. Footer */
+footer {
+  margin-top: auto;
+  padding: 80px 0 40px;
+  opacity: 0.5;
+  font-size: 0.95rem;
+}
