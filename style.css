@@ -119,7 +119,20 @@ h1 {
   opacity: 0.85;
 }
 
-/* 6. Buttons and Links */
+/* 6. Terms Page Specific Styles */
+.content-wrapper {
+  max-width: 800px;
+  width: 100%;
+  text-align: left; /* Justifies text to the left for readability */
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
+}
+
+.content-wrapper p {
+  margin-bottom: 20px;
+}
+
+/* 7. Buttons and Links */
 .btn {
   padding: 16px 40px;
   font-size: 1.25rem;
@@ -130,11 +143,23 @@ h1 {
   font-weight: bold;
   display: inline-block;
   margin: 5px 0;
+  border: none;
+  transition: opacity 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
 }
 
 /* Blue styling for the primary "Enough talk" button */
 .btn-primary {
   background: #007bff;
+}
+
+/* Stripe Subscribe button specifically */
+#subscribe-btn {
+  /* Inherits styles from .btn; custom colors are handled in-line in terms.html */
 }
 
 .link-light {
@@ -143,10 +168,17 @@ h1 {
   opacity: 0.7;
 }
 
-/* 7. Footer */
+/* 8. Footer */
 footer {
   margin-top: auto;
   padding: 80px 0 40px;
   opacity: 0.5;
   font-size: 0.95rem;
+}
+
+.footer-email {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
 }
