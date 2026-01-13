@@ -182,3 +182,32 @@ footer {
   display: inline-block;
   margin-top: 10px;
 }
+
+/* --- Mobile Fixes: Only active on phones --- */
+@media (max-width: 600px) {
+  
+  /* 1. Center the performance cards */
+  .performance-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 15px 0 !important;
+    display: block !important;
+  }
+
+  /* 2. Fix the "Breakup" link wrapping */
+  footer {
+    line-height: 2.2; /* Adds space so the email and breakup link don't touch */
+    padding: 20px 10px;
+  }
+
+  #manage-sub-link {
+    display: block; /* Puts the breakup link on its own line automatically */
+    margin-top: 5px;
+    font-size: 0.8rem;
+  }
+
+  .footer-email {
+    margin-right: 0 !important; /* Removes the side gap on mobile */
+  }
+}
+
