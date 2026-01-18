@@ -67,12 +67,12 @@
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            price: 'price_1SlhH6GTTbyyVhsdhRwdCgsl'
+            price: 'price_1Slh8GK4fprm54UY4r6bgt9P'
           })
         });
 
         const session = await response.json();
-        const stripe = Stripe('pk_test_51SlglzGTTbyyVhsdf3Vc4bYnVed581nAGxKRQNn7uQ14wc3HSheampRTigmOP6UsjrMjRFjBoDz29TkgRxPKJoGN00awPWHu8n');
+        const stripe = Stripe('pk_live_51SlglqK4fprm54UYl4fUqT0F4U72XDCJouP92k5G33KyF4lSpfdYEta30nSEX8qjdXeX7RWhTqWGTIbE6zDTl6jH00BvB9voCn');
 
         stripe.redirectToCheckout({ sessionId: session.id });
       } catch (error) {
